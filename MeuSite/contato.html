@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="home.html">Home</a>
+            <a class="cabecalho__menu__link" href="sobre.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+            <a class="cabecalho__menu__link" href="servico.html">Serviços</a>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Fale <strong class="titulo-destaque">comigo</strong></h1>
+            <p class="apresentacao__conteudo__texto">
+                Tem dúvidas, sugestões ou quer conversar sobre um projeto? Preencha o formulário abaixo e entrarei em contato!
+            </p>
+
+            <form class="formulario" id="contactForm" action="#" method="post">
+                <div class="formulario__grupo">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="formulario__grupo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="formulario__grupo">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="formulario__botao">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <img class="apresentacao__imagem" src="./Assets/programadora.jpg" alt="Imagem ilustrativa de uma programadora">
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Gabriela Polli.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
